@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student card FORM</title>
+</head>
+<body>
+    <header>
+        <h1>Student card FORM</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <form action="submit.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Provide your details</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a password"><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <p>Languages Known:</p>
+                    <input type="checkbox" id="english" name="languages" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="spanish" name="languages" value="spanish">
+                    <label for="spanish">Spanish</label><br>
+                    <input type="checkbox" id="french" name="languages" value="french">
+                    <label for="french">French</label><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">Select your country</option>
+                        <option value="usa">USA</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="germany">Germany</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <h2>College Subjects</h2>
+                    <label for="subjects">Select your subjects</label><br>
+                    <select id="subjects" name="subjects" multiple size="4">
+                        <option value="math">Mathematics</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="english">English</option>
+                    </select><br><br>
+
+                    <label for="interest">Rate your interest in Computer Science:</label>
+                    <input type="range" id="interest" name="interest" min="0" max="10">
+                </fieldset>
+
+                <fieldset>
+                    <h2>Skills Assessment</h2>
+                    <label for="skills">Describe your skills:</label><br>
+                    <textarea id="skills" name="skills" rows="4" cols="40" placeholder="List your skills here..."></textarea><br><br>
+
+                    <label for="resume">Upload your resume:</label>
+                    <input type="file" id="resume" name="resume"><br><br>
+
+                    <label for="color">Pick your favorite color:</label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <label for="studytime">Preferred study time:</label>
+                    <input type="time" id="studytime" name="studytime"><br><br>
+
+                    <input type="submit" value="Submit Survey">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Student card by Vyshinsky Nazar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
